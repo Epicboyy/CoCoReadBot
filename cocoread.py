@@ -34,14 +34,14 @@ def logError(text):
 def helpmessage():
     helpMessage = """
 ╔═══════════
-╠♥ ✿ CoCo指令表 ✿ ♥
+╠♥ ✿ 莫言指令表 ✿ ♥
 ╠➥ 「Speed」查看機器速度
 ╠➥ 「Set」查看設定
 ╠➥ 「Reread On/Off」查看收回 打開/關閉
-╚═〘 Credits By: ©CoCo™  〙
+╚═〘 Credits By: ©莫言♡™  〙
 """
     return helpMessage
-admin=['u28d781fa3ba9783fd5144390352b0c24',clMID]
+admin=['ufe1707ae9b2ff7ab61505795b7995440',clMID]
 def lineBot(op):
     try:
         if op.type == 0:
@@ -66,7 +66,7 @@ def lineBot(op):
                 if text.lower() == 'help':
                     helpMessage = helpmessage()
                     cl.sendMessage(to, str(helpMessage))
-                    cl.sendContact(to, "u28d781fa3ba9783fd5144390352b0c24")
+                    cl.sendContact(to, "ufe1707ae9b2ff7ab61505795b7995440")
                 elif text.lower() == 'speed':
                     time0 = timeit.timeit('"-".join(str(n) for n in range(100))', number=10000)
                     str1 = str(time0)
